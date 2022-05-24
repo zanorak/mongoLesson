@@ -13,8 +13,8 @@ def main():
     
     #2. add a document to your collection using the insert_one method
     person1 = {
-        'name': 'Bob Smith',
-        'birthdate': '01/02/2003',
+        'name': 'John Cleese',
+        'birthdate': '8/27/1939',
     }
     collection.insert_one( person1 )
     
@@ -32,8 +32,8 @@ def main():
     
     #6. print all documents with a particular value for some attribute
     #ex. print all documents with the birth date 12/1/1990
-    print( "\nAll the people born on 01/02/2003 are" )
-    for doc in collection.find({ 'birthdate': '01/02/2003'}):
+    print( "\nAll the people born on 8/27/1939 are" )
+    for doc in collection.find({ 'birthdate': '8/27/1939'}):
         print( doc )
     
 if __name__=="__main__":
